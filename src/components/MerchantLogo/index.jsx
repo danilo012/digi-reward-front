@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const MerchantLogo = props => (
   <div className="reward-item__logo-container">
-    <img className="reward-item__logo" src={props.logo} alt="Nuffield Health logo" />
+    <img className="reward-item__logo" src={props.logo} />
   </div>
 );
 
