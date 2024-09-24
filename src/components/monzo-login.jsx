@@ -7,7 +7,7 @@ import Loader from '../components/Loader';
 class MonzoLogin extends React.Component {
   componentDidMount() {
     const code = this.props.location.search.match(/code=([^&]+)/)[1];
-    axios.post('http://127.0.0.1:3000/auth/monzo', { code })
+    axios.post('https://digi-reward-back.onrender.com/auth/monzo', { code })
       .then((response) => {
         TokenManager.setToken(response.data.token);
         this.props.onLogin();
